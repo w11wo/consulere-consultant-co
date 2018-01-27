@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Consulere Consultant Co.</title>
+    <link rel="stylesheet" type="text/css" href="css/base.css">
+    <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Actor" rel="stylesheet">
+    <link rel="icon" type="image/jpg" href="img/favicon.jpg">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+  <nav>
+    <div class="top-nav">
+      <img class="bars" src="img/bars.png" alt="bars" onclick="controlNav()">
+      <a href="index.html"><img src="img/consulere-logo.png" alt="logo" class="logo"></a><br/>
+    </div>
+    <div class="main-nav-close" id="nav">
+      <ul class="nav-bar">
+        <li><a href="#case-study">Case Study</a></li>
+        <li><a href="references.html">References</a></li>
+        <li><a href="#about-us">About Us</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <img src="img/banner.jpg" alt="banner" class="banner">
+  <div class="content">
+    <h1>Are you struggling with some setbacks?</h1>
+    <div class="opening">
+      <div class="opening-list">
+        <h3>Consulere Consultant Company works to understand our clients special needs and develop tailored solutions.</h3>
+      </div>
+      <div class="opening-list">
+        <h3>It is our desire to help you with the latest marketing strategies assisted by our experts to provide you with growth and satisfaction.</h3>
+      </div>
+    </div>
+    <div class="discover-more"><a href="#services">DISCOVER MORE<br>v</a></div>
+    </div>
+  <div class="services" id="services">
+    <div class="services-content">
+      <h2>Our Services</h2>
+      <div class="service-list">
+        <img src="img/logo1.png" alt="logo1" class="service-logo" onmouseover="displayText1()" onmouseout="removeText1()">
+        <br>
+        <div class="text" id="textClass1">
+          <h4>Detect Opportunities</h4><br>
+          <p>growth and minimizing risks</p>
+        </div>
+      </div>
+      <div class="service-list">
+        <img src="img/logo2.png" alt="logo2" class="service-logo" onmouseover="displayText2()" onmouseout="removeText2()">
+        <br>
+        <div class="text" id="textClass2">
+          <h4>Monitor and Track</h4><br>
+          <p>stability of performance</p>
+        </div>
+      </div>
+      <div class="service-list">
+        <img src="img/logo3.png" alt="logo3" class="service-logo" onmouseover="displayText3()" onmouseout="removeText3()">
+        <br>
+        <div class="text" id="textClass3">
+          <h4>Manage and Control</h4><br>
+          <p>efficiency and effectiveness</p>
+        </div>
+      </div>
+      <div class="service-list">
+        <img src="img/logo4.png" alt="logo4" class="service-logo" onmouseover="displayText4()" onmouseout="removeText4()">
+        <br>
+        <div class="text" id="textClass4">
+          <h4>Predict Future</h4><br>
+          <p>opportunities for success</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="case-study" id="case-study">
+    <h2>Case Study</h2>
+      <img src="img/case-study.jpg" alt="case-study" class="case-study">
+      <div class="arrow" id="arrow" onclick="changeInfo()"></div>
+      <div class="case-title" id="case-title">
+        <h1>The Bee Healthy NZ Honey</h1>
+        <p>2013</p>
+        <h4><a href="case-1.html" target="_self">READ MORE</a></h4>
+      </div>
+  </div>
+  <div class="about-us" id="about-us">
+    <h2>About Us</h2>
+    <div class="image-box"><img src="img/member1.jpg" alt="member1" class="member" id="mb1"></div>
+    <div class="image-box"><img src="img/member2.jpg" alt="member2" class="member" id="mb2"></div>
+    <div class="image-box"><img src="img/member3.jpg" alt="member3" class="member" id="mb3"></div>
+    <div class="image-box"><img src="img/member4.jpg" alt="member4" class="member" id="mb4"></div>
+  </div>
+  <div class="contact" id="contact">
+    <h2>Contact</h2>
+    <p class="slogan">Are you ready to grow your business?</p>
+    <div class="contact-details">
+      <div class="contact-details-list">
+        <h3>Consulere Consultant Company</h3>
+        <img src="img/c3-logo.png" alt="c3-logo">
+        <p>Graha Mandiri Lantai 2, Jalan Imam Bonjol No. 61, Menteng, RT.8/RW.4, Menteng, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10310</p>
+        <p class="links">(021) 541 7870<br>hello@consulereco.id.vg</p>
+        <p>Leave us a message along with your details and we'll respond to you with the solutions you need.</p>
+      </diV>
+      <div class="contact-details-list">
+        <div class="contact-form">
+          <form action="#">
+            <input type="text" id="fname" name="firstname" placeholder="First Name">
+            <input type="text" id="lname" name="lastname" placeholder="Last Name">
+            <input type="text" id="email" name="email" placeholder="Email">
+            <input type="text" id="industry" name="industry" placeholder="Industry">
+            <textarea id="subject" name="subject" style="height:100px"></textarea>
+            <input type="submit" value="CONTACT">
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+<script src="js/scripts.js"></script>
+</body>
+</html>
