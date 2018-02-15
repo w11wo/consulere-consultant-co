@@ -8,70 +8,6 @@ function controlNav() {
     }
 }
 
-function displayText1() {
-  var textClass = document.getElementById("textClass1").className;
-
-  if (textClass == "text") {
-    document.getElementById("textClass1").className = "text-appear";
-  }
-}
-
-function removeText1() {
-  var textClass = document.getElementById("textClass1").className;
-
-  if (textClass == "text-appear") {
-    document.getElementById("textClass1").className = "text";
-  }
-}
-
-function displayText2() {
-  var textClass = document.getElementById("textClass2").className;
-
-  if (textClass == "text") {
-    document.getElementById("textClass2").className = "text-appear";
-  }
-}
-
-function removeText2() {
-  var textClass = document.getElementById("textClass2").className;
-
-  if (textClass == "text-appear") {
-    document.getElementById("textClass2").className = "text";
-  }
-}
-
-function displayText3() {
-  var textClass = document.getElementById("textClass3").className;
-
-  if (textClass == "text") {
-    document.getElementById("textClass3").className = "text-appear";
-  }
-}
-
-function removeText3() {
-  var textClass = document.getElementById("textClass3").className;
-
-  if (textClass == "text-appear") {
-    document.getElementById("textClass3").className = "text";
-  }
-}
-
-function displayText4() {
-  var textClass = document.getElementById("textClass4").className;
-
-  if (textClass == "text") {
-    document.getElementById("textClass4").className = "text-appear";
-  }
-}
-
-function removeText4() {
-  var textClass = document.getElementById("textClass4").className;
-
-  if (textClass == "text-appear") {
-    document.getElementById("textClass4").className = "text";
-  }
-}
-
 function changeInfo() {
     var arrowClass = document.getElementById("arrow").className;
 
@@ -84,124 +20,105 @@ function changeInfo() {
     }
 }
 
-function displayTheory1() {
-  var theoryClass = document.getElementById("theory-list1").className;
-
-  if (theoryClass == "theory-hide") {
-    document.getElementById("theory-list1").className = "theory-list-show";
-    document.getElementById("theory-name1").className = "theory-hide";
-  }
-}
-
-function removeTheory1() {
-  var theoryClass = document.getElementById("theory-list1").className;
-
-  if (theoryClass == "theory-list-show") {
-    document.getElementById("theory-list1").className = "theory-hide";
-    document.getElementById("theory-name1").className = "theory-name-show";
-  }
-}
-
-function displayTheory2() {
-  var theoryClass = document.getElementById("theory-list2").className;
-
-  if (theoryClass == "theory-hide") {
-    document.getElementById("theory-list2").className = "theory-list-show";
-    document.getElementById("theory-name2").className = "theory-hide";
-  }
-}
-
-function removeTheory2() {
-  var theoryClass = document.getElementById("theory-list2").className;
-
-  if (theoryClass == "theory-list-show") {
-    document.getElementById("theory-list2").className = "theory-hide";
-    document.getElementById("theory-name2").className = "theory-name-show";
-  }
-}
-
-function displayTheory3() {
-  var theoryClass = document.getElementById("theory-list3").className;
-
-  if (theoryClass == "theory-hide") {
-    document.getElementById("theory-list3").className = "theory-list-show";
-    document.getElementById("theory-name3").className = "theory-hide";
-  }
-}
-
-function removeTheory3() {
-  var theoryClass = document.getElementById("theory-list3").className;
-
-  if (theoryClass == "theory-list-show") {
-    document.getElementById("theory-list3").className = "theory-hide";
-    document.getElementById("theory-name3").className = "theory-name-show";
-  }
-}
-
-function displayTheory4() {
-  var theoryClass = document.getElementById("theory-list4").className;
-
-  if (theoryClass == "theory-hide") {
-    document.getElementById("theory-list4").className = "theory-list-show";
-    document.getElementById("theory-name4").className = "theory-hide";
-  }
-}
-
-function removeTheory4() {
-  var theoryClass = document.getElementById("theory-list4").className;
-
-  if (theoryClass == "theory-list-show") {
-    document.getElementById("theory-list4").className = "theory-hide";
-    document.getElementById("theory-name4").className = "theory-name-show";
-  }
-}
-
-$('#mb1').on({
-    'mouseenter': function(){
-        $('#mb1').attr('src','img/membercard1.jpg');
+$('.service-logo').on({
+  'mouseenter': function(){
+    if (this.id == "service1") {
+      $("#text1").attr('class','text-appear');
     }
+    else if (this.id == "service2") {
+      $("#text2").attr('class','text-appear');
+    }
+    else if (this.id == "service3") {
+      $("#text3").attr('class','text-appear');
+    }
+    else if (this.id == "service4") {
+      $("#text4").attr('class','text-appear');
+    }
+  },
+  'mouseleave': function(){
+    if (this.id == "service1") {
+      $("#text1").attr('class','text');
+    }
+    else if (this.id == "service2") {
+      $("#text2").attr('class','text');
+    }
+    else if (this.id == "service3") {
+      $("#text3").attr('class','text');
+    }
+    else if (this.id == "service4") {
+      $("#text4").attr('class','text');
+    }
+  },
 });
 
-$('#mb1').on({
-    'mouseleave': function(){
-        $('#mb1').attr('src','img/member1.jpg');
+$('.theory').on({
+  'mouseenter': function(){
+    if (this.id == "theory1") {
+      $("#theory-name1").attr('class','theory-hide');
+      $("#theory-detail1").attr('class','theory-detail-show');
     }
+    else if (this.id == "theory2") {
+      $("#theory-name2").attr('class','theory-hide');
+      $("#theory-detail2").attr('class','theory-detail-show');
+    }
+    else if (this.id == "theory3") {
+      $("#theory-name3").attr('class','theory-hide');
+      $("#theory-detail3").attr('class','theory-detail-show');
+    }
+    else if (this.id == "theory4") {
+      $("#theory-name4").attr('class','theory-hide');
+      $("#theory-detail4").attr('class','theory-detail-show');
+    }
+  },
+  'mouseleave': function(){
+    if (this.id == "theory1") {
+      $("#theory-name1").attr('class','theory-name-show');
+      $("#theory-detail1").attr('class','theory-hide')
+    }
+    else if (this.id == "theory2") {
+      $("#theory-name2").attr('class','theory-name-show');
+      $("#theory-detail2").attr('class','theory-hide');
+    }
+    else if (this.id == "theory3") {
+      $("#theory-name3").attr('class','theory-name-show');
+      $("#theory-detail3").attr('class','theory-hide');
+    }
+    else if (this.id == "theory4") {
+      $("#theory-name4").attr('class','theory-name-show');
+      $("#theory-detail4").attr('class','theory-hide');
+    }
+  },
 });
 
-$('#mb2').on({
-    'mouseenter': function(){
-        $('#mb2').attr('src','img/membercard2.jpg');
+$('.member').on({
+  'mouseenter': function(){
+    if (this.id == "mb1") {
+      $("#mb1").attr('src','img/membercard1.jpg');
     }
-});
-
-$('#mb2').on({
-    'mouseleave': function(){
-        $('#mb2').attr('src','img/member2.jpg');
+    else if (this.id == "mb2") {
+      $("#mb2").attr('src','img/membercard2.jpg');
     }
-});
-
-$('#mb3').on({
-    'mouseenter': function(){
-        $('#mb3').attr('src','img/membercard3.jpg');
+    else if (this.id == "mb3") {
+      $("#mb3").attr('src','img/membercard3.jpg');
     }
-});
-
-$('#mb3').on({
-    'mouseleave': function(){
-        $('#mb3').attr('src','img/member3.jpg');
+    else if (this.id == "mb4") {
+      $("#mb4").attr('src','img/membercard4.jpg');
     }
-});
-
-$('#mb4').on({
-    'mouseenter': function(){
-        $('#mb4').attr('src','img/membercard4.jpg');
+  },
+  'mouseleave': function(){
+    if (this.id == "mb1") {
+      $("#mb1").attr('src','img/member1.jpg');
     }
-});
-
-$('#mb4').on({
-    'mouseleave': function(){
-        $('#mb4').attr('src','img/member4.jpg');
+    else if (this.id == "mb2") {
+      $("#mb2").attr('src','img/member2.jpg');
     }
+    else if (this.id == "mb3") {
+      $("#mb3").attr('src','img/member3.jpg');
+    }
+    else if (this.id == "mb4") {
+      $("#mb4").attr('src','img/member4.jpg');
+    }
+  },
 });
 
 $(document).ready(function(){

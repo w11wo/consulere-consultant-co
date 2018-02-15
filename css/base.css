@@ -210,6 +210,12 @@ div.service-list h4 {
   display: block;
   text-align: center;
   width: 100%;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 div.service-list p {
@@ -541,7 +547,11 @@ div.theory {
   margin-bottom: 20px;
 }
 
-.theory-list-show {
+.theory-hide {
+  display: none;
+}
+
+.theory-detail-show {
   display: block;
   padding: 10px 30px;
 }
@@ -549,18 +559,12 @@ div.theory {
 .theory-name-show {
   display: block;
   padding: 100px;
-  position: relative;
   text-align: center;
   vertical-align: top;
 }
 
-.theory-hide {
-  display: none;
-}
-
 h1.theory-name {
   padding: 100px;
-  position: relative;
   text-align: center;
   vertical-align: top;
 }
